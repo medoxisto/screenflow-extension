@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Convert to GIF</title>
+    <link rel="stylesheet" href="converter.css">
+</head>
+
+<body>
+    <h1>🎞️ Convert to GIF</h1>
+    <p class="subtitle">Transform your recording into an animated GIF</p>
+
+    <div class="settings">
+        <label>
+            Quality:
+            <select id="qualitySelect">
+                <option value="10">Low (smaller file)</option>
+                <option value="5" selected>Medium</option>
+                <option value="1">High (larger file)</option>
+            </select>
+        </label>
+        <label>
+            Frame Rate:
+            <select id="fpsSelect">
+                <option value="5">5 FPS (smaller)</option>
+                <option value="10" selected>10 FPS</option>
+                <option value="15">15 FPS (smoother)</option>
+            </select>
+        </label>
+        <label>
+            Max Width:
+            <select id="widthSelect">
+                <option value="320">320px (tiny)</option>
+                <option value="480" selected>480px (small)</option>
+                <option value="640">640px (medium)</option>
+                <option value="800">800px (large)</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="preview-container">
+        <video id="videoPreview" controls></video>
+    </div>
+
+    <div class="progress-container" id="progressContainer" style="display: none;">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <p class="progress-text" id="progressText">Extracting frames...</p>
+    </div>
+
+    <div class="actions">
+        <input type="file" id="fileInput" accept="video/*" style="display: none;">
+        <button class="btn btn-secondary" id="loadBtn">📂 Load Video</button>
+        <button class="btn btn-primary" id="convertBtn" disabled>🎞️ Convert to GIF</button>
+    </div>
+
+    <div class="result" id="resultContainer" style="display: none;">
+        <h2>✅ GIF Ready!</h2>
+        <img id="gifPreview" alt="Generated GIF">
+        <div class="result-actions">
+            <button class="btn btn-primary" id="downloadGifBtn">💾 Download GIF</button>
+        </div>
+    </div>
+
+    <script src="lib/gif.js"></script>
+    <script src="converter.js"></script>
+</body>
+
+</html>
