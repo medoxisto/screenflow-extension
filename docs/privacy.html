@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ScreenFlow</title>
+    <meta name="description" content="Privacy Policy for ScreenFlow Chrome Extension">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a12;
+            --bg-secondary: #1a1a2e;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --accent: #6366f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, #6366f1, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 40px 0 20px;
+            color: var(--accent);
+        }
+
+        p,
+        li {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 30px 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .checkmark {
+            color: #22c55e;
+            margin-right: 8px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🎬 Screen<span>Flow</span></div>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: December 27, 2024</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>🔒 TL;DR: We Don't Collect Any Data</h3>
+            <p>ScreenFlow is designed with privacy as a core principle. All recordings, screenshots, and annotations are
+                processed entirely on your device. Nothing is ever sent to any server.</p>
+        </div>
+
+        <h2>1. Information We Collect</h2>
+        <p><strong>We do not collect, store, or transmit any personal information or user data.</strong></p>
+        <p>ScreenFlow operates 100% locally on your device. Specifically:</p>
+        <ul>
+            <li><span class="checkmark">✓</span> We do NOT collect personal information</li>
+            <li><span class="checkmark">✓</span> We do NOT collect usage analytics</li>
+            <li><span class="checkmark">✓</span> We do NOT track your browsing history</li>
+            <li><span class="checkmark">✓</span> We do NOT access your recordings or screenshots</li>
+            <li><span class="checkmark">✓</span> We do NOT use cookies or tracking pixels</li>
+            <li><span class="checkmark">✓</span> We do NOT require an account or login</li>
+        </ul>
+
+        <h2>2. How the Extension Works</h2>
+        <p>ScreenFlow uses the following browser APIs to provide its functionality:</p>
+        <ul>
+            <li><strong>Screen Capture API:</strong> To record your screen, window, or tab when you explicitly request
+                it</li>
+            <li><strong>Tab Capture API:</strong> To capture screenshots of the visible area</li>
+            <li><strong>Storage API:</strong> To temporarily store screenshot data between the capture and editor pages
+                (stored locally only)</li>
+            <li><strong>Downloads API:</strong> To save your recordings and screenshots to your computer</li>
+        </ul>
+        <p>All processing happens locally in your browser. No data leaves your device.</p>
+
+        <h2>3. Data Storage</h2>
+        <p>ScreenFlow uses Chrome's local storage API only for:</p>
+        <ul>
+            <li>Temporarily passing screenshot data from the capture to the editor (deleted after editing)</li>
+            <li>No persistent data is stored</li>
+            <li>No cloud storage is used</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>ScreenFlow does not integrate with any third-party services. We do not:</p>
+        <ul>
+            <li>Send data to analytics services</li>
+            <li>Use advertising networks</li>
+            <li>Share data with any third parties</li>
+            <li>Connect to external servers</li>
+        </ul>
+
+        <h2>5. Permissions Explained</h2>
+        <p>The extension requests the following permissions:</p>
+        <ul>
+            <li><strong>activeTab:</strong> Required to capture screenshots of the current tab</li>
+            <li><strong>downloads:</strong> Required to save files to your computer</li>
+            <li><strong>storage:</strong> Required to temporarily hold screenshot data locally</li>
+            <li><strong>scripting:</strong> Required for full-page scroll capture feature</li>
+            <li><strong>tabs:</strong> Required to open recorder/editor in new tabs</li>
+            <li><strong>Host permissions:</strong> Required for full-page capture to work on any website</li>
+        </ul>
+
+        <h2>6. Open Source</h2>
+        <p>ScreenFlow is open source. You can review the source code yourself to verify our privacy practices:</p>
+        <p><a href="https://github.com/medoxisto/screenflow-extension"
+                style="color: var(--accent);">https://github.com/medoxisto/screenflow-extension</a></p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>ScreenFlow does not knowingly collect any information from children under 13 years of age. Since we collect
+            no data at all, this is not applicable.</p>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an
+            updated "Last updated" date.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please open an issue on our GitHub repository:</p>
+        <p><a href="https://github.com/medoxisto/screenflow-extension/issues"
+                style="color: var(--accent);">https://github.com/medoxisto/screenflow-extension/issues</a></p>
+
+        <div class="footer">
+            <p><a href="index.html">← Back to ScreenFlow</a></p>
+            <p style="margin-top: 20px; color: var(--text-secondary);">© 2024 ScreenFlow. MIT License.</p>
+        </div>
+    </div>
+</body>
+
+</html>
